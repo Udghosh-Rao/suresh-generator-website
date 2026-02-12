@@ -31,8 +31,8 @@ gtag('config', 'AW-17843912700');
 <meta name="twitter:image" content="https://suresh-generator-neemrana.pages.dev/twitter-card.jpg" />
 <meta name="theme-color" content="#0B2A6F" />
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
-<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-<link rel="dns-prefetch" href="https://wa.me" />
+<link rel="preconnect" href="https://www.google.com" crossorigin />
+<link rel="dns-prefetch" href="https://wa.me/" />
 <script type="application/ld+json">
 {
 "@context":"https://schema.org",
@@ -124,2068 +124,1468 @@ gtag('config', 'AW-17843912700');
 ]
 }
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 <style>
-:root {
-    --navy-deep: #0B2A6F;
-    --navy-light: #1a3d8f;
-    --navy-dark: #061a45;
-    --gold: #C8A24A;
-    --gold-light: #d4b65e;
-    --gold-dark: #b89140;
-    --electric: #00D9FF;
-    --success: #16A34A;
-    --success-light: #22C55E;
-    --white: #ffffff;
-    --bg-ultra: #fafbff;
-    --bg-light: #f5f7fc;
-    --text-primary: #0A0F1C;
-    --text-secondary: #3d4451;
-    --text-muted: #6b7280;
-    --border: #e5e8f0;
-    --shadow-sm: 0 2px 8px rgba(11,42,111,0.06);
-    --shadow-md: 0 8px 24px rgba(11,42,111,0.1);
-    --shadow-lg: 0 20px 60px rgba(11,42,111,0.15);
-    --shadow-xl: 0 30px 80px rgba(11,42,111,0.25);
-    --max-width: 1320px;
-    --ease: cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    color: var(--text-primary);
-    background: linear-gradient(180deg, var(--bg-ultra) 0%, var(--white) 100%);
-    line-height: 1.6;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-}
-
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-}
-
-@keyframes shimmer {
-    0% {
-        background-position: -1000px 0;
-    }
-    100% {
-        background-position: 1000px 0;
-    }
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes glow {
-    0%, 100% {
-        box-shadow: 0 0 20px rgba(0,217,255,0.3);
-    }
-    50% {
-        box-shadow: 0 0 40px rgba(0,217,255,0.6);
-    }
-}
-
-@keyframes gradientShift {
-    0%, 100% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-}
-
-@keyframes scaleIn {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 clamp(20px, 4vw, 40px);
-}
-
-.top-bar {
-    background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy-dark) 100%);
-    color: var(--white);
-    padding: 12px 0;
-    font-size: 14px;
-    position: relative;
-    overflow: hidden;
-    animation: slideInLeft 0.6s ease;
-}
-
-.top-bar::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 200%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-    animation: shimmer 3s infinite;
-}
-
-.top-bar-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 1;
-}
-
-.top-bar-left {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.top-bar-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 6px 14px;
-    background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 50px;
-    text-decoration: none;
-    color: var(--white);
-    font-weight: 600;
-    font-size: 13px;
-    transition: all 0.3s var(--ease);
-    backdrop-filter: blur(10px);
-}
-
-.top-bar-item:hover {
-    background: rgba(255,255,255,0.2);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: rgba(255,255,255,0.95);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--border);
-    box-shadow: var(--shadow-sm);
-    animation: fadeIn 0.8s ease;
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 0;
-    gap: 20px;
-}
-
-.brand-new {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    text-decoration: none;
-    transition: all 0.3s var(--ease);
-}
-
-.brand-new:hover {
-    transform: scale(1.03);
-}
-
-.logo-new {
-    width: 56px;
-    height: 56px;
-    background: linear-gradient(135deg, var(--navy-deep), var(--navy-light));
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--gold);
-    font-weight: 900;
-    font-size: 24px;
-    box-shadow: 0 8px 24px rgba(11,42,111,0.3);
-    position: relative;
-    overflow: hidden;
-}
-
-.logo-new::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
-    transform: rotate(45deg);
-    animation: shimmer 3s infinite;
-}
-
-.brand-text-new h1 {
-    font-size: clamp(18px, 2.5vw, 22px);
-    font-weight: 800;
-    color: var(--text-primary);
-    line-height: 1.2;
-    font-family: 'Playfair Display', serif;
-}
-
-.brand-text-new p {
-    font-size: 12px;
-    color: var(--text-muted);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.nav-menu {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    list-style: none;
-}
-
-.nav-menu a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    position: relative;
-    padding: 8px 0;
-    transition: all 0.3s var(--ease);
-}
-
-.nav-menu a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--gold), var(--gold-light));
-    transition: width 0.3s var(--ease);
-}
-
-.nav-menu a:hover {
-    color: var(--navy-deep);
-}
-
-.nav-menu a:hover::after {
-    width: 100%;
-}
-
-.header-cta {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 12px 24px;
-    border-radius: 50px;
-    font-weight: 700;
-    font-size: 14px;
-    text-decoration: none;
-    transition: all 0.3s var(--ease);
-    cursor: pointer;
-    border: none;
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.btn::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.3);
-    transform: translate(-50%, -50%);
-    transition: width 0.5s ease, height 0.5s ease;
-}
-
-.btn:hover::before {
-    width: 400px;
-    height: 400px;
-}
-
-.btn-primary {
-    background: linear-gradient(135deg, var(--navy-deep), var(--navy-light));
-    color: var(--white);
-    box-shadow: 0 4px 15px rgba(11,42,111,0.3);
-}
-
-.btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(11,42,111,0.4);
-}
-
-.btn-success {
-    background: linear-gradient(135deg, var(--success), var(--success-light));
-    color: var(--white);
-    box-shadow: 0 4px 15px rgba(22,163,74,0.3);
-}
-
-.btn-success:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(22,163,74,0.4);
-}
-
-.btn-outline {
-    background: transparent;
-    color: var(--navy-deep);
-    border: 2px solid var(--navy-deep);
-}
-
-.btn-outline:hover {
-    background: var(--navy-deep);
-    color: var(--white);
-}
-
-.menu-toggle {
-    display: none;
-    width: 44px;
-    height: 44px;
-    background: var(--white);
-    border: 2px solid var(--border);
-    border-radius: 12px;
-    cursor: pointer;
-    transition: all 0.3s var(--ease);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
-.menu-toggle span {
-    width: 22px;
-    height: 2px;
-    background: var(--text-primary);
-    border-radius: 2px;
-    transition: all 0.3s var(--ease);
-}
-
-.menu-toggle:hover {
-    border-color: var(--navy-deep);
-    transform: scale(1.05);
-}
-
-.hero-section {
-    padding: clamp(40px, 8vw, 80px) 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 60%;
-    height: 100%;
-    background: radial-gradient(circle at top right, rgba(11,42,111,0.05), transparent);
-    animation: float 6s ease-in-out infinite;
-}
-
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: clamp(40px, 6vw, 80px);
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-.hero-left {
-    animation: fadeInUp 1s ease;
-}
-
-.hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 20px;
-    background: linear-gradient(135deg, rgba(11,42,111,0.1), rgba(200,162,74,0.1));
-    border: 1px solid rgba(11,42,111,0.2);
-    border-radius: 50px;
-    font-weight: 700;
-    font-size: 13px;
-    color: var(--navy-deep);
-    margin-bottom: 20px;
-    animation: slideInLeft 1.2s ease;
-}
-
-.hero-left h1 {
-    font-size: clamp(36px, 6vw, 64px);
-    font-weight: 900;
-    line-height: 1.1;
-    color: var(--text-primary);
-    margin-bottom: 20px;
-    font-family: 'Playfair Display', serif;
-    animation: fadeInUp 1.4s ease;
-}
-
-.hero-highlight {
-    background: linear-gradient(135deg, var(--navy-deep), var(--electric));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-size: 200% 200%;
-    animation: gradientShift 3s ease-in-out infinite;
-}
-
-.hero-left p {
-    font-size: clamp(16px, 2.5vw, 20px);
-    color: var(--text-secondary);
-    line-height: 1.7;
-    margin-bottom: 30px;
-    max-width: 600px;
-    animation: fadeInUp 1.6s ease;
-}
-
-.hero-cta {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    animation: fadeInUp 1.8s ease;
-}
-
-.hero-stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 40px;
-    animation: fadeInUp 2s ease;
-}
-
-.stat-box {
-    padding: 20px;
-    background: linear-gradient(135deg, var(--white), var(--bg-light));
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    box-shadow: var(--shadow-sm);
-    transition: all 0.3s var(--ease);
-    text-align: center;
-}
-
-.stat-box:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
-    border-color: var(--gold);
-}
-
-.stat-box strong {
-    display: block;
-    font-size: clamp(24px, 4vw, 32px);
-    font-weight: 900;
-    color: var(--navy-deep);
-    font-family: 'Playfair Display', serif;
-}
-
-.stat-box span {
-    display: block;
-    font-size: 13px;
-    color: var(--text-muted);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-top: 5px;
-}
-
-.hero-right {
-    animation: slideInRight 1.2s ease;
-}
-
-.info-cards {
-    display: grid;
-    gap: 15px;
-}
-
-.info-card {
-    padding: 20px;
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    box-shadow: var(--shadow-md);
-    transition: all 0.3s var(--ease);
-    position: relative;
-    overflow: hidden;
-}
-
-.info-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: linear-gradient(180deg, var(--gold), var(--gold-light));
-    transition: width 0.3s var(--ease);
-}
-
-.info-card:hover {
-    transform: translateX(5px);
-    box-shadow: var(--shadow-lg);
-}
-
-.info-card:hover::before {
-    width: 100%;
-    opacity: 0.1;
-}
-
-.info-card-label {
-    display: block;
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-}
-
-.info-card-value {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--navy-deep);
-}
-
-.info-card a {
-    color: var(--navy-deep);
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.info-card a:hover {
-    color: var(--gold);
-}
-
-.services-section {
-    padding: clamp(50px, 10vw, 100px) 0;
-    background: linear-gradient(180deg, var(--white), var(--bg-ultra));
-}
-
-.section-header {
-    text-align: center;
-    margin-bottom: clamp(40px, 8vw, 60px);
-    animation: fadeInUp 1s ease;
-}
-
-.section-label {
-    display: inline-block;
-    padding: 8px 20px;
-    background: linear-gradient(135deg, rgba(11,42,111,0.1), rgba(200,162,74,0.1));
-    border: 1px solid rgba(11,42,111,0.2);
-    border-radius: 50px;
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--navy-deep);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-
-.section-header h2 {
-    font-size: clamp(32px, 5vw, 48px);
-    font-weight: 900;
-    color: var(--text-primary);
-    margin-bottom: 15px;
-    font-family: 'Playfair Display', serif;
-}
-
-.section-header p {
-    font-size: 18px;
-    color: var(--text-secondary);
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-}
-
-.service-card {
-    padding: 30px;
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    box-shadow: var(--shadow-sm);
-    transition: all 0.4s var(--ease);
-    position: relative;
-    overflow: hidden;
-    animation: fadeInUp 0.6s ease;
-    animation-fill-mode: both;
-}
-
-.service-card:nth-child(1) { animation-delay: 0.1s; }
-.service-card:nth-child(2) { animation-delay: 0.2s; }
-.service-card:nth-child(3) { animation-delay: 0.3s; }
-.service-card:nth-child(4) { animation-delay: 0.4s; }
-.service-card:nth-child(5) { animation-delay: 0.5s; }
-
-.service-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, var(--gold), var(--gold-light));
-    transform: scaleX(0);
-    transition: transform 0.4s var(--ease);
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--gold);
-}
-
-.service-card:hover::before {
-    transform: scaleX(1);
-}
-
-.service-icon {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, var(--navy-deep), var(--navy-light));
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-    box-shadow: 0 8px 20px rgba(11,42,111,0.2);
-    transition: all 0.3s var(--ease);
-}
-
-.service-card:hover .service-icon {
-    transform: scale(1.1) rotate(5deg);
-    animation: glow 2s infinite;
-}
-
-.service-card h3 {
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: 12px;
-}
-
-.service-card p {
-    font-size: 15px;
-    color: var(--text-secondary);
-    line-height: 1.6;
-}
-
-.service-tag {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 6px 16px;
-    background: rgba(200,162,74,0.1);
-    border: 1px solid rgba(200,162,74,0.3);
-    border-radius: 50px;
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--gold-dark);
-}
-
-.why-choose-section {
-    padding: clamp(50px, 10vw, 100px) 0;
-    background: linear-gradient(180deg, var(--bg-ultra), var(--white));
-    position: relative;
-}
-
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.feature-box {
-    padding: 35px 25px;
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    box-shadow: var(--shadow-md);
-    text-align: center;
-    transition: all 0.4s var(--ease);
-    position: relative;
-    overflow: hidden;
-}
-
-.feature-box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--gold), var(--electric));
-    transition: all 0.4s var(--ease);
-    transform: translateX(-50%);
-}
-
-.feature-box:hover::before {
-    width: 100%;
-}
-
-.feature-box:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-xl);
-    border-color: var(--gold);
-}
-
-.feature-icon {
-    font-size: 48px;
-    margin-bottom: 20px;
-    display: block;
-    animation: float 3s ease-in-out infinite;
-}
-
-.feature-box h3 {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: 12px;
-}
-
-.feature-box p {
-    font-size: 14px;
-    color: var(--text-secondary);
-    line-height: 1.6;
-}
-
-.products-section {
-    padding: clamp(50px, 10vw, 100px) 0;
-    background: linear-gradient(180deg, var(--white), var(--bg-ultra));
-}
-
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-}
-
-.product-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: var(--shadow-md);
-    transition: all 0.4s var(--ease);
-    animation: fadeInUp 0.6s ease;
-    animation-fill-mode: both;
-}
-
-.product-card:nth-child(1) { animation-delay: 0.1s; }
-.product-card:nth-child(2) { animation-delay: 0.2s; }
-.product-card:nth-child(3) { animation-delay: 0.3s; }
+:root{
+--navy:#0B2A6F;
+--navy2:#123C97;
+--gold:#C8A24A;
+--ok:#16A34A;
+--bg:#fff;
+--text:#0A0F1C;
+--muted:#5A6476;
+--line:#EEF1F7;
+--shadow: 0 22px 60px rgba(10,15,28,.10);
+--shadow2: 0 12px 32px rgba(10,15,28,.08);
+--shadow3: 0 6px 16px rgba(10,15,28,.05);
+--r14: 14px;
+--r18: 18px;
+--r24: 24px;
+--r32: 32px;
+--max: 1180px;
+--ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+--ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+--ease-out: cubic-bezier(0.33, 1, 0.68, 1);
+--transition-fast: 0.2s;
+--transition-base: 0.3s;
+--transition-slow: 0.5s;
+}
+
+*{ 
+box-sizing:border-box;
+}
+
+html{ 
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+color:var(--text);
+background:
+radial-gradient(1200px 520px at 20% -10%, rgba(11,42,111,.06), transparent 60%),
+radial-gradient(900px 520px at 80% -10%, rgba(200,162,74,.10), transparent 60%),
+#fff;
+line-height:1.6;
+overflow-x:hidden;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;
+}
+
+a{ 
+color:inherit; 
+text-decoration:none;
+transition: all var(--transition-base) var(--ease-smooth);
+}
+
+.container{
+width:min(var(--max), 92vw);
+margin:0 auto;
+contain: layout style;
+}
+
+h1,h2{ 
+font-family: ui-serif, Georgia, "Times New Roman", serif;
+}
+
+h1,h2,h3{ 
+margin:0; 
+line-height:1.12;
+}
+
+p{ 
+margin:0;
+}
+
+.muted{ 
+color:var(--muted);
+}
+
+.section{ 
+padding:46px 0;
+}
+
+.sectionHead{
+display:flex; 
+justify-content:space-between; 
+align-items:end;
+gap:14px; 
+flex-wrap:wrap; 
+margin-bottom:20px;
+}
+
+.sectionHead h2{ 
+font-size: clamp(22px, 2.2vw, 36px);
+}
+
+.sectionHead p{ 
+max-width: 760px;
+}
+
+.card{
+background:#fff;
+border:1px solid var(--line);
+border-radius: var(--r24);
+box-shadow: var(--shadow3);
+transition: 
+transform var(--transition-base) var(--ease-smooth), 
+box-shadow var(--transition-base) var(--ease-smooth),
+border-color var(--transition-base) var(--ease-smooth);
+position: relative;
+overflow: hidden;
+}
+
+.card::before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(135deg, rgba(200,162,74,.05), transparent);
+opacity: 0;
+transition: opacity var(--transition-base) var(--ease-smooth);
+pointer-events: none;
+}
+
+.card:hover{
+transform: translateY(-4px);
+box-shadow: var(--shadow);
+border-color: rgba(200,162,74,.3);
+}
+
+.card:hover::before{
+opacity: 1;
+}
+
+.pad{ 
+padding:18px;
+}
+
+.grid-2{ 
+display:grid; 
+grid-template-columns:1fr 1fr; 
+gap:16px;
+}
+
+.grid-3{ 
+display:grid; 
+grid-template-columns:repeat(3, 1fr); 
+gap:16px;
+}
+
+.btn{
+display:inline-flex; 
+align-items:center; 
+justify-content:center; 
+gap:10px;
+padding:12px 20px;
+border-radius:999px;
+border:1px solid var(--line);
+background:#fff;
+color:var(--text);
+font-weight:900;
+font-size:14px;
+box-shadow: 0 8px 20px rgba(10,15,28,.06);
+transition: 
+transform var(--transition-fast) var(--ease-out),
+box-shadow var(--transition-base) var(--ease-smooth),
+background var(--transition-base) var(--ease-smooth),
+border-color var(--transition-base) var(--ease-smooth);
+cursor:pointer;
+white-space:nowrap;
+min-height: 44px;
+min-width: 44px;
+position: relative;
+overflow: hidden;
+}
+
+.btn::after{
+content: '';
+position: absolute;
+top: 50%;
+left: 50%;
+width: 0;
+height: 0;
+border-radius: 50%;
+background: rgba(255,255,255,.2);
+transform: translate(-50%, -50%);
+transition: width var(--transition-slow) var(--ease-out), height var(--transition-slow) var(--ease-out);
+}
+
+.btn:active::after{
+width: 300px;
+height: 300px;
+}
+
+.btn:hover{
+transform: translateY(-2px);
+box-shadow: 0 12px 28px rgba(10,15,28,.12);
+}
+
+.btn:active{
+transform: translateY(0);
+}
+
+.btn:focus-visible{
+outline: 3px solid var(--navy);
+outline-offset: 3px;
+}
+
+.btn.primary{
+background: linear-gradient(135deg, var(--navy), var(--navy2));
+border-color: transparent;
+color:#fff;
+box-shadow: 0 12px 28px rgba(11,42,111,.15);
+}
+
+.btn.primary:hover{
+box-shadow: 0 16px 36px rgba(11,42,111,.22);
+transform: translateY(-3px);
+}
+
+.btn.ok{
+background: linear-gradient(135deg, #22C55E, #16A34A);
+border-color: transparent;
+color:#fff;
+box-shadow: 0 12px 28px rgba(22,163,74,.15);
+}
+
+.btn.ok:hover{
+box-shadow: 0 16px 36px rgba(22,163,74,.22);
+transform: translateY(-3px);
+}
+
+.pill{
+display:inline-flex; 
+align-items:center; 
+gap:8px;
+padding:7px 14px;
+border:1px solid rgba(200,162,74,.22);
+border-radius:999px;
+background: rgba(255,255,255,.92);
+color:var(--muted);
+font-weight:900;
+font-size:12px;
+letter-spacing:.2px;
+transition: all var(--transition-base) var(--ease-smooth);
+}
+
+.pill:hover{
+border-color: var(--gold);
+background: rgba(200,162,74,.08);
+transform: scale(1.05);
+}
+
+header{
+position:sticky; 
+top:0; 
+z-index:200;
+background: rgba(255,255,255,.92);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border-bottom: 1px solid var(--line);
+box-shadow: 0 4px 12px rgba(10,15,28,.04);
+will-change: transform;
+contain: layout style paint;
+transition: all var(--transition-base) var(--ease-smooth);
+}
+
+header.scrolled{
+box-shadow: 0 8px 24px rgba(10,15,28,.08);
+background: rgba(255,255,255,.96);
+}
+
+.topbar{
+padding:10px 0;
+display:flex; 
+justify-content:space-between; 
+gap:10px; 
+flex-wrap:wrap;
+color:var(--muted);
+font-size:13px;
+}
+
+.topbar a{
+padding:6px 12px;
+border:1px solid rgba(200,162,74,.22);
+border-radius:999px;
+background: rgba(255,255,255,.92);
+font-weight:900;
+transition: all var(--transition-base) var(--ease-smooth);
+}
+
+.topbar a:hover{
+border-color: var(--gold);
+background: rgba(200,162,74,.08);
+transform: scale(1.05) translateY(-1px);
+}
+
+.navRow{
+display:flex; 
+align-items:center; 
+justify-content:space-between;
+padding: 12px 0 14px;
+gap:12px;
+}
+
+.brand{
+display:flex; 
+align-items:center; 
+gap:12px;
+min-width: 220px;
+transition: transform var(--transition-base) var(--ease-smooth);
+}
+
+.brand:hover{
+transform: scale(1.02);
+}
+
+.logo{
+width:44px; 
+height:44px;
+border-radius: 16px;
+background: linear-gradient(135deg, var(--navy), var(--navy2));
+color:#fff;
+display:grid; 
+place-items:center;
+font-weight:1000;
+box-shadow: 0 12px 28px rgba(11,42,111,.18);
+user-select:none;
+transition: all var(--transition-base) var(--ease-bounce);
+position: relative;
+overflow: hidden;
+}
+
+.logo::before{
+content: '';
+position: absolute;
+top: -50%;
+left: -50%;
+width: 200%;
+height: 200%;
+background: linear-gradient(45deg, transparent, rgba(255,255,255,.15), transparent);
+transform: rotate(45deg) translateX(-100%);
+transition: transform var(--transition-slow) var(--ease-out);
+}
+
+.brand:hover .logo{
+transform: rotate(-5deg) scale(1.1);
+box-shadow: 0 16px 36px rgba(11,42,111,.28);
+}
+
+.brand:hover .logo::before{
+transform: rotate(45deg) translateX(100%);
+}
+
+.brand strong{ 
+display:block; 
+font-size:18px;
+transition: color var(--transition-base) var(--ease-smooth);
+}
+
+.brand:hover strong{
+color: var(--navy);
+}
+
+.brand small{ 
+display:block; 
+font-size:12px; 
+color:var(--muted); 
+font-weight:900; 
+margin-top:2px;
+}
+
+.navLinks{ 
+display:flex; 
+align-items:center; 
+gap:10px; 
+flex-wrap:wrap;
+}
+
+.navLinks a.link{
+padding:10px 14px;
+border-radius: 12px;
+color:var(--muted);
+font-weight:900;
+border:1px solid transparent;
+transition: all var(--transition-base) var(--ease-smooth);
+position: relative;
+}
+
+.navLinks a.link::after{
+content: '';
+position: absolute;
+bottom: 6px;
+left: 14px;
+right: 14px;
+height: 2px;
+background: linear-gradient(90deg, var(--gold), transparent);
+transform: scaleX(0);
+transform-origin: left;
+transition: transform var(--transition-base) var(--ease-out);
+}
+
+.navLinks a.link:hover{
+border-color: rgba(200,162,74,.22);
+background: rgba(255,255,255,.92);
+color: var(--text);
+}
+
+.navLinks a.link:hover::after{
+transform: scaleX(1);
+}
+
+.navLinks a.link:focus-visible{
+outline: 2px solid var(--navy);
+outline-offset: 2px;
+}
+
+.menuBtn{
+width:44px; 
+height:44px;
+border-radius: 14px;
+border:1px solid var(--line);
+background:#fff;
+box-shadow: 0 8px 16px rgba(10,15,28,.08);
+display:none;
+cursor:pointer;
+transition: all var(--transition-base) var(--ease-smooth);
+}
+
+.menuBtn:hover{
+transform: scale(1.08);
+border-color: var(--gold);
+box-shadow: 0 12px 24px rgba(10,15,28,.12);
+}
+
+.menuBtn:focus-visible{
+outline: 3px solid var(--navy);
+outline-offset: 2px;
+}
+
+.menuBtn span{
+display:block;
+width:20px; 
+height:2px;
+background: var(--text);
+margin:5px auto;
+border-radius: 8px;
+transition: all var(--transition-base) var(--ease-smooth);
+}
+
+.menuBtn:hover span:nth-child(1){
+transform: translateY(-2px);
+}
+
+.menuBtn:hover span:nth-child(3){
+transform: translateY(2px);
+}
+
+.drawerOverlay{
+position:fixed; 
+inset:0;
+background: rgba(10,15,28,.5);
+opacity:0; 
+pointer-events:none;
+transition: opacity var(--transition-base) var(--ease-smooth);
+z-index:500;
+backdrop-filter: blur(8px);
+-webkit-backdrop-filter: blur(8px);
+}
+
+.drawerOverlay.open{ 
+opacity:1; 
+pointer-events:auto;
+}
+
+.drawer{
+position:fixed;
+top:0; 
+right:0;
+height:100vh;
+width:min(86vw, 360px);
+background:#fff;
+border-left:1px solid rgba(200,162,74,.18);
+box-shadow: -10px 0 50px rgba(10,15,28,.15);
+transform: translateX(105%);
+transition: transform var(--transition-base) var(--ease-out);
+z-index:501;
+padding:14px;
+display:grid;
+grid-template-rows: auto 1fr auto;
+gap:12px;
+will-change: transform;
+}
+
+.drawer.open{ 
+transform: translateX(0);
+}
+
+.drawerTop{
+display:flex; 
+align-items:center; 
+justify-content:space-between; 
+gap:10px;
+padding:14px;
+border:1px solid rgba(200,162,74,.16);
+border-radius: var(--r18);
+background: rgba(255,255,255,.92);
+transition: all var(--transition-base) var(--ease-smooth);
+}
+
+.drawerTop:hover{
+border-color: rgba(200,162,74,.3);
+background: rgba(255,255,255,1);
+}
+
+.closeBtn{
+width:42px; 
+height:42px;
+border-radius: 14px;
+border:1px solid var(--line);
+background:#fff;
+font-weight:1000;
+cursor:pointer;
+transition: all var(--transition-base) var(--ease-bounce);
+display: grid;
+place-items: center;
+}
+
+.closeBtn:hover{
+background: var(--navy);
+color: #fff;
+transform: rotate(90deg) scale(1.1);
+border-color: var(--navy);
+}
+
+.closeBtn:focus-visible{
+outline: 3px solid var(--navy);
+outline-offset: 2px;
+}
+
+.drawerNav{
+padding:14px;
+border:1px solid rgba(200,162,74,.16);
+border-radius: var(--r18);
+background: rgba(255,255,255,.92);
+display:grid; 
+gap:10px;
+align-content:start;
+overflow:auto;
+}
+
+.drawerNav a{
+padding:14px 16px;
+border-radius: 14px;
+border:1px solid rgba(200,162,74,.14);
+background:#fff;
+font-weight:900;
+color: var(--text);
+transition: all var(--transition-base) var(--ease-smooth);
+position: relative;
+}
+
+.drawerNav a::before{
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+bottom: 0;
+width: 3px;
+background: linear-gradient(180deg, var(--gold), transparent);
+border-radius: 14px 0 0 14px;
+transform: scaleY(0);
+transition: transform var(--transition-base) var(--ease-out);
+}
+
+.drawerNav a:hover{
+border-color: var(--gold);
+background: rgba(200,162,74,.06);
+transform: translateX(8px);
+}
+
+.drawerNav a:hover::before{
+transform: scaleY(1);
+}
+
+.drawerBottom{
+display:grid; 
+gap:12px;
+padding:14px;
+border:1px solid rgba(200,162,74,.16);
+border-radius: var(--r18);
+background: rgba(255,255,255,.92);
+}
+
+.hero{ 
+padding: 24px 0 12px;
+}
+
+.heroBox{
+border-radius: var(--r32);
+border:1px solid rgba(200,162,74,.16);
+box-shadow: var(--shadow2);
+overflow:hidden;
+background:
+radial-gradient(1100px 420px at 20% 0%, rgba(11,42,111,.07), transparent 62%),
+radial-gradient(900px 420px at 70% 0%, rgba(200,162,74,.12), transparent 62%),
+#fff;
+transition: all var(--transition-base) var(--ease-smooth);
+}
+
+.heroBox:hover{
+box-shadow: var(--shadow);
+border-color: rgba(200,162,74,.25);
+}
+
+.heroGrid{
+display:grid;
+grid-template-columns: 1.15fr .85fr;
+}
+
+.heroLeft{ 
+padding:24px;
+}
 
-.product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-xl);
-}
-
-.product-header {
-    padding: 40px 30px;
-    background: linear-gradient(135deg, rgba(11,42,111,0.05), rgba(200,162,74,0.05));
-    border-bottom: 1px solid var(--border);
-    text-align: center;
-    position: relative;
-}
-
-.product-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--navy-deep), var(--electric));
-}
-
-.product-icon {
-    font-size: 48px;
-    margin-bottom: 15px;
-    animation: float 3s ease-in-out infinite;
-}
-
-.product-header h3 {
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--text-primary);
-    margin-bottom: 8px;
-    font-family: 'Playfair Display', serif;
-}
-
-.product-header p {
-    font-size: 14px;
-    color: var(--text-muted);
+.heroLeft h1{ 
+margin:14px 0 10px; 
+font-size: clamp(28px, 3.4vw, 50px);
+transition: color var(--transition-base) var(--ease-smooth);
 }
 
-.product-body {
-    padding: 30px;
-}
-
-.product-specs {
-    list-style: none;
-    display: grid;
-    gap: 12px;
-    margin-bottom: 25px;
-}
-
-.product-specs li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 16px;
-    background: var(--bg-light);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    font-size: 14px;
-    transition: all 0.3s ease;
-}
+.heroLeft p{ 
+color:var(--muted); 
+max-width: 64ch;
+line-height: 1.7;
+}
+
+.heroCtas{ 
+display:flex; 
+gap:12px; 
+flex-wrap:wrap; 
+margin-top:16px;
+}
+
+.heroRight{
+border-left:1px solid rgba(200,162,74,.16);
+padding:20px;
+background: linear-gradient(180deg, rgba(200,162,74,.06), transparent);
+display:grid; 
+gap:12px; 
+align-content:start;
+}
+
+.info{
+border:1px solid rgba(200,162,74,.16);
+border-radius: var(--r18);
+padding:14px;
+background: rgba(255,255,255,.92);
+box-shadow: var(--shadow3);
+transition: all var(--transition-base) var(--ease-smooth);
+position: relative;
+overflow: hidden;
+}
+
+.info::before{
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+bottom: 0;
+width: 3px;
+background: linear-gradient(180deg, var(--gold), var(--navy));
+transform: scaleY(0);
+transition: transform var(--transition-base) var(--ease-out);
+}
+
+.info:hover{
+box-shadow: var(--shadow2);
+transform: translateX(4px);
+border-color: rgba(200,162,74,.3);
+}
+
+.info:hover::before{
+transform: scaleY(1);
+}
+
+.info b{ 
+display:block; 
+font-size:12px; 
+color:var(--muted); 
+margin-bottom:8px; 
+letter-spacing:.2px;
+text-transform: uppercase;
+}
 
-.product-specs li:hover {
-    background: rgba(11,42,111,0.05);
-    border-color: var(--navy-deep);
-    transform: translateX(5px);
-}
-
-.product-specs li span:first-child {
-    color: var(--text-muted);
-    font-weight: 600;
-}
-
-.product-specs li span:last-child {
-    color: var(--navy-deep);
-    font-weight: 700;
-}
-
-.product-actions {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-
-.brands-section {
-    padding: clamp(50px, 10vw, 100px) 0;
-    background: linear-gradient(180deg, var(--bg-ultra), var(--white));
-}
-
-.brands-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-top: 40px;
+.info a{
+color: var(--navy);
+font-weight:1000;
+transition: color var(--transition-base) var(--ease-smooth);
 }
-
-.brand-box {
-    padding: 30px;
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 18px;
-    color: var(--navy-deep);
-    box-shadow: var(--shadow-sm);
-    transition: all 0.3s var(--ease);
+
+.info a:hover{
+color: var(--gold);
+}
+
+.kpis{
+display:grid;
+grid-template-columns: repeat(4, 1fr);
+border-top:1px solid rgba(200,162,74,.16);
+background: rgba(255,255,255,.92);
 }
 
-.brand-box:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--gold);
+.kpi{
+padding:16px;
+border-right:1px solid rgba(200,162,74,.16);
+transition: all var(--transition-base) var(--ease-smooth);
+text-align: center;
+position: relative;
 }
 
-.testimonials-section {
-    padding: clamp(50px, 10vw, 100px) 0;
-    background: linear-gradient(180deg, var(--white), var(--bg-ultra));
+.kpi::before{
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+height: 3px;
+background: linear-gradient(90deg, var(--gold), var(--navy));
+transform: scaleX(0);
+transition: transform var(--transition-base) var(--ease-out);
 }
 
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
+.kpi:hover{
+background: rgba(200,162,74,.06);
+transform: scale(1.05);
 }
 
-.testimonial-card {
-    padding: 30px;
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    box-shadow: var(--shadow-md);
-    position: relative;
-    transition: all 0.3s var(--ease);
+.kpi:hover::before{
+transform: scaleX(1);
 }
 
-.testimonial-card::before {
-    content: '"';
-    position: absolute;
-    top: -10px;
-    left: 20px;
-    font-size: 80px;
-    font-family: 'Playfair Display', serif;
-    color: rgba(11,42,111,0.1);
-    line-height: 1;
+.kpi:last-child{ 
+border-right:none;
 }
 
-.testimonial-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
+.kpi strong{ 
+display:block; 
+font-size: 20px;
+color: var(--navy);
+font-weight: 900;
+transition: transform var(--transition-base) var(--ease-bounce);
 }
 
-.testimonial-text {
-    font-size: 15px;
-    color: var(--text-secondary);
-    line-height: 1.7;
-    margin-bottom: 20px;
-    font-style: italic;
+.kpi:hover strong{
+transform: scale(1.15);
 }
 
-.testimonial-author {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
+.kpi small{ 
+display:block; 
+margin-top:6px; 
+color:var(--muted); 
+font-weight:900;
+font-size: 12px;
 }
 
-.author-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--navy-deep), var(--electric));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    font-weight: 700;
-    font-size: 20px;
+.feat{
+padding:18px;
+opacity: 1;
+transform: translateY(0);
+transition: 
+opacity var(--transition-slow) var(--ease-smooth), 
+transform var(--transition-slow) var(--ease-smooth);
 }
 
-.author-info h4 {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--text-primary);
+.feat.fade-in-wait{
+opacity: 0;
+transform: translateY(30px);
 }
 
-.author-info p {
-    font-size: 13px;
-    color: var(--text-muted);
+.feat.fade-in-wait.visible{
+opacity: 1;
+transform: translateY(0);
 }
 
-.rating {
-    color: var(--gold);
-    font-size: 14px;
-    margin-top: 5px;
+.featTop{ 
+display:flex; 
+align-items:center; 
+justify-content:space-between; 
+gap:10px; 
+margin-bottom:12px;
 }
 
-.faq-section {
-    padding: clamp(50px, 10vw, 100px) 0;
-    background: linear-gradient(180deg, var(--bg-ultra), var(--white));
+.icon{
+width:44px; 
+height:44px;
+border-radius: 14px;
+display:grid; 
+place-items:center;
+border:1px solid rgba(200,162,74,.20);
+background: linear-gradient(135deg, rgba(200,162,74,.20), rgba(11,42,111,.06));
+font-weight:1000;
+font-size: 20px;
+transition: all var(--transition-base) var(--ease-bounce);
+box-shadow: var(--shadow3);
 }
 
-.faq-container {
-    max-width: 900px;
-    margin: 40px auto 0;
+.feat:hover .icon{
+transform: scale(1.15) rotate(8deg);
+box-shadow: var(--shadow2);
+background: linear-gradient(135deg, rgba(200,162,74,.3), rgba(11,42,111,.1));
 }
 
-.faq-item {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    margin-bottom: 15px;
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-    transition: all 0.3s var(--ease);
+.feat h3{
+font-size: 18px;
+margin-bottom: 8px;
+transition: color var(--transition-base) var(--ease-smooth);
 }
 
-.faq-item:hover {
-    box-shadow: var(--shadow-md);
+.feat:hover h3{
+color: var(--navy);
 }
 
-.faq-question {
-    padding: 25px 30px;
-    font-size: 17px;
-    font-weight: 700;
-    color: var(--text-primary);
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    user-select: none;
-    transition: all 0.3s ease;
+.feat p{ 
+color:var(--muted); 
+font-size:14px;
+line-height: 1.6;
 }
 
-.faq-question:hover {
-    color: var(--navy-deep);
+.product{
+overflow:hidden;
+opacity: 1;
+transform: translateY(0);
+transition: 
+opacity var(--transition-slow) var(--ease-smooth), 
+transform var(--transition-slow) var(--ease-smooth);
 }
 
-.faq-icon {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--gold);
-    transition: transform 0.3s var(--ease);
+.product.fade-in-wait{
+opacity: 0;
+transform: translateY(30px);
 }
 
-.faq-item.active .faq-icon {
-    transform: rotate(45deg);
+.product.fade-in-wait.visible{
+opacity: 1;
+transform: translateY(0);
 }
 
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s var(--ease), padding 0.4s var(--ease);
+.product .img{
+height:165px;
+display:grid; 
+place-items:center;
+font-weight:1000;
+font-size: 28px;
+background:
+radial-gradient(650px 200px at 40% 0%, rgba(200,162,74,.22), transparent 62%),
+linear-gradient(135deg, rgba(11,42,111,.05), #fff);
+border-bottom:1px solid rgba(200,162,74,.16);
+color: color-mix(in oklab, var(--text) 70%, var(--navy));
+transition: all var(--transition-base) var(--ease-smooth);
+position: relative;
+overflow: hidden;
 }
 
-.faq-item.active .faq-answer {
-    max-height: 500px;
-    padding: 0 30px 25px 30px;
+.product .img::before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: linear-gradient(135deg, rgba(200,162,74,.1), transparent);
+opacity: 0;
+transition: opacity var(--transition-base) var(--ease-smooth);
 }
 
-.faq-answer p {
-    font-size: 15px;
-    color: var(--text-secondary);
-    line-height: 1.7;
+.product:hover .img{
+transform: scale(1.05);
 }
 
-.contact-section {
-    padding: clamp(50px, 10vw, 100px) 0;
-    background: linear-gradient(180deg, var(--white), var(--bg-ultra));
+.product:hover .img::before{
+opacity: 1;
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 30px;
-    margin-top: 40px;
+.specs{ 
+list-style:none; 
+padding:0; 
+margin:14px 0 0; 
+display:grid; 
+gap:10px;
 }
 
-.contact-info {
-    display: grid;
-    gap: 20px;
-    align-content: start;
+.specs li{
+display:flex; 
+justify-content:space-between; 
+gap:10px;
+padding:12px 14px;
+border-radius: 12px;
+border:1px solid rgba(200,162,74,.16);
+background: rgba(255,255,255,.92);
+color:var(--muted);
+font-weight:900;
+font-size:13px;
+transition: all var(--transition-base) var(--ease-smooth);
+position: relative;
 }
 
-.contact-card {
-    padding: 30px;
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    box-shadow: var(--shadow-md);
-    transition: all 0.3s var(--ease);
+.specs li::before{
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+bottom: 0;
+width: 3px;
+background: linear-gradient(180deg, var(--gold), transparent);
+border-radius: 12px 0 0 12px;
+transform: scaleY(0);
+transition: transform var(--transition-base) var(--ease-out);
 }
 
-.contact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
+.specs li:hover{
+border-color: var(--gold);
+background: rgba(200,162,74,.06);
+transform: translateX(6px);
 }
 
-.contact-card h3 {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: 15px;
+.specs li:hover::before{
+transform: scaleY(1);
 }
 
-.contact-card p {
-    color: var(--text-secondary);
-    margin-bottom: 20px;
+.specs b{ 
+color:var(--text); 
+font-weight:1000;
 }
 
-.contact-buttons {
-    display: grid;
-    gap: 10px;
+.actions{ 
+display:flex; 
+gap:10px; 
+flex-wrap:wrap; 
+margin-top:14px;
 }
 
-.map-container {
-    border-radius: 24px;
-    overflow: hidden;
-    border: 1px solid var(--border);
-    box-shadow: var(--shadow-lg);
-    height: 500px;
+.contactGrid{ 
+display:grid; 
+grid-template-columns: 1fr 1.2fr; 
+gap:16px;
 }
 
-.map-container iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
+.map{
+border-radius: var(--r24);
+overflow:hidden;
+border:1px solid rgba(200,162,74,.16);
+box-shadow: var(--shadow2);
+background:#fff;
+min-height: 380px;
+transition: all var(--transition-base) var(--ease-smooth);
 }
 
-footer {
-    padding: 40px 0;
-    background: linear-gradient(135deg, var(--navy-dark), var(--navy-deep));
-    color: var(--white);
+.map:hover{
+box-shadow: var(--shadow);
+border-color: rgba(200,162,74,.3);
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+.map iframe{ 
+width:100%; 
+height:100%; 
+border:0;
 }
 
-.footer-left p {
-    font-size: 14px;
-    opacity: 0.9;
+footer{ 
+padding: 20px 0 90px;
 }
 
-.footer-right {
-    display: flex;
-    gap: 15px;
+.foot{
+display:flex; 
+justify-content:space-between; 
+align-items:center;
+gap:14px; 
+flex-wrap:wrap;
+padding:18px;
+border-radius: var(--r24);
+border:1px solid rgba(200,162,74,.16);
+background: rgba(255,255,255,.92);
+box-shadow: var(--shadow2);
+color:var(--muted);
+font-size:14px;
+transition: all var(--transition-base) var(--ease-smooth);
 }
 
-.floating-buttons {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    z-index: 999;
+.foot:hover{
+border-color: rgba(200,162,74,.3);
+box-shadow: var(--shadow);
 }
 
-.fab-btn {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: var(--shadow-lg);
-    transition: all 0.3s var(--ease);
-    cursor: pointer;
-    animation: fadeIn 1s ease;
+.float{
+position:fixed;
+right:16px;
+bottom:16px;
+display:grid;
+gap:12px;
+z-index:600;
 }
 
-.fab-btn:hover {
-    transform: translateY(-5px) scale(1.1);
-    box-shadow: var(--shadow-xl);
+.fab{
+width:56px; 
+height:56px;
+border-radius:999px;
+display:grid; 
+place-items:center;
+border:1px solid rgba(200,162,74,.16);
+background:#fff;
+box-shadow: var(--shadow2);
+font-weight:1000;
+font-size: 16px;
+user-select:none;
+transition: all var(--transition-base) var(--ease-bounce);
+cursor:pointer;
 }
 
-.fab-whatsapp {
-    background: linear-gradient(135deg, var(--success), var(--success-light));
-    color: var(--white);
+.fab:hover{
+transform: translateY(-4px) scale(1.12);
+box-shadow: var(--shadow);
 }
 
-.fab-call {
-    background: linear-gradient(135deg, var(--navy-deep), var(--navy-light));
-    color: var(--white);
+.fab:focus-visible{
+outline: 3px solid var(--navy);
+outline-offset: 3px;
 }
 
-.fab-top {
-    background: var(--white);
-    color: var(--navy-deep);
-    border: 2px solid var(--border);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
+.fab.call{
+background: linear-gradient(135deg, var(--navy), var(--navy2));
+border-color:transparent;
+color:#fff;
+box-shadow: 0 12px 28px rgba(11,42,111,.18);
 }
 
-.fab-top.show {
-    opacity: 1;
-    pointer-events: auto;
+.fab.call:hover{
+box-shadow: 0 16px 36px rgba(11,42,111,.28);
 }
 
-.drawer-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(10,15,28,0.7);
-    backdrop-filter: blur(5px);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    z-index: 1998;
+.fab.wa{
+background: linear-gradient(135deg, #22C55E, #16A34A);
+border-color:transparent;
+color:#fff;
+box-shadow: 0 12px 28px rgba(22,163,74,.18);
 }
 
-.drawer-overlay.active {
-    opacity: 1;
-    pointer-events: auto;
+.fab.wa:hover{
+box-shadow: 0 16px 36px rgba(22,163,74,.28);
 }
 
-.mobile-drawer {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: min(85vw, 380px);
-    height: 100vh;
-    background: var(--white);
-    box-shadow: var(--shadow-xl);
-    transform: translateX(100%);
-    transition: transform 0.3s var(--ease);
-    z-index: 1999;
-    display: flex;
-    flex-direction: column;
+.fab.top{ 
+opacity:0; 
+pointer-events:none;
+transition: all var(--transition-base) var(--ease-smooth);
 }
 
-.mobile-drawer.active {
-    transform: translateX(0);
+.fab.top.show{ 
+opacity:1; 
+pointer-events:auto;
 }
 
-.drawer-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
-    border-bottom: 1px solid var(--border);
+@media (max-width: 980px){
+.heroGrid{ grid-template-columns:1fr; }
+.heroRight{ border-left:none; border-top:1px solid rgba(200,162,74,.16); }
+.grid-3{ grid-template-columns:1fr; }
+.grid-2{ grid-template-columns:1fr; }
+.contactGrid{ grid-template-columns:1fr; }
 }
 
-.drawer-close {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid var(--border);
-    background: var(--white);
-    cursor: pointer;
-    font-size: 20px;
-    transition: all 0.3s ease;
+@media (max-width: 760px){
+.navLinks{ display:none; }
+.menuBtn{ display:block; }
+.kpis{ grid-template-columns: 1fr 1fr; }
+.kpi{ border-right:none; border-bottom:1px solid rgba(200,162,74,.16); }
+.kpi:nth-last-child(-n+2){ border-bottom:none; }
+.map{ min-height: 320px; }
+}
+
+@media (prefers-reduced-motion: reduce){
+html{ scroll-behavior:auto; }
+*,*::before,*::after{
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+transition-duration: 0.01ms !important;
+}
 }
-
-.drawer-close:hover {
-    background: var(--navy-deep);
-    color: var(--white);
-    transform: rotate(90deg);
-}
 
-.drawer-nav {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
-}
-
-.drawer-nav a {
-    display: block;
-    padding: 15px 20px;
-    margin-bottom: 10px;
-    background: var(--bg-light);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    color: var(--text-primary);
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.drawer-nav a:hover {
-    background: var(--navy-deep);
-    color: var(--white);
-    transform: translateX(5px);
-}
-
-.drawer-footer {
-    padding: 20px;
-    border-top: 1px solid var(--border);
-    display: grid;
-    gap: 10px;
-}
-
-@media (max-width: 1024px) {
-    .hero-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .hero-stats {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-menu,
-    .header-cta .btn:not(.menu-toggle) {
-        display: none;
-    }
-    
-    .menu-toggle {
-        display: flex;
-    }
-    
-    .hero-stats {
-        grid-template-columns: 1fr;
-    }
-    
-    .top-bar-left {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .services-grid,
-    .products-grid,
-    .features-grid,
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .floating-buttons {
-        bottom: 20px;
-        right: 20px;
-    }
-    
-    .fab-btn {
-        width: 55px;
-        height: 55px;
-        font-size: 20px;
-    }
-    
-    .product-actions {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-cta {
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .hero-cta .btn {
-        width: 100%;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-}
-
-@media print {
-    .floating-buttons,
-    .menu-toggle,
-    .drawer-overlay,
-    .mobile-drawer,
-    header {
-        display: none;
-    }
+@media print{
+.float, .menuBtn, .drawerOverlay, .drawer, header{ display:none; }
+body{ background:#fff; }
+.card{ box-shadow:none; border:1px solid #ccc; }
 }
 </style>
 </head>
 <body>
-
-<div class="top-bar">
-    <div class="container">
-        <div class="top-bar-content">
-            <div class="top-bar-left">
-                <span>⚡ 24/7 Emergency Service</span>
-                <span>📍 Neemrana, Rajasthan • All India Coverage</span>
-            </div>
-            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                <a href="tel:+919829325775" class="top-bar-item">📞 +91 9829325775</a>
-                <a href="mailto:suresh.powerplus@gmail.com" class="top-bar-item">✉️ Email Us</a>
-            </div>
-        </div>
-    </div>
+<header id="mainHeader">
+<div class="container">
+<div class="topbar">
+<div>Neemrana, Rajasthan • 24/7 Emergency Service</div>
+<div style="display:flex; gap:10px; flex-wrap:wrap">
+<a href="tel:+919829325775" aria-label="Call Suresh Generator">Call: +91 9829325775</a>
+<a href="mailto:suresh.powerplus@gmail.com" aria-label="Email Suresh Generator">Email: suresh.powerplus@gmail.com</a>
 </div>
-
-<header>
-    <div class="container">
-        <div class="header-content">
-            <a href="#home" class="brand-new">
-                <div class="logo-new">SG</div>
-                <div class="brand-text-new">
-                    <h1>Suresh Generator</h1>
-                    <p>Reliable Power Solutions</p>
-                </div>
-            </a>
-            
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#why-choose">Why Us</a></li>
-                    <li><a href="#testimonials">Reviews</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            
-            <div class="header-cta">
-                <a href="tel:+919829325775" class="btn btn-primary">Get Quote</a>
-                <button class="btn menu-toggle" id="menuToggle" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </div>
+</div>
+<div class="navRow" aria-label="Primary navigation">
+<a class="brand" href="#home" aria-label="Suresh Generator homepage">
+<div class="logo" aria-hidden="true">SG</div>
+<div>
+<strong>Suresh Generator</strong>
+<small>Reliable service • Neemrana • Pan-India</small>
+</div>
+</a>
+<nav class="navLinks">
+<a class="link" href="#services">Services</a>
+<a class="link" href="#products">Products</a>
+<a class="link" href="#contact">Contact</a>
+<a class="btn primary" href="tel:+919829325775">Get Quote</a>
+</nav>
+<button class="menuBtn" id="openMenu" aria-label="Open menu" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
+</div>
+</div>
 </header>
 
-<div class="drawer-overlay" id="drawerOverlay"></div>
-<aside class="mobile-drawer" id="mobileDrawer">
-    <div class="drawer-header">
-        <div class="brand-text-new">
-            <h1>Menu</h1>
-            <p>Suresh Generator</p>
-        </div>
-        <button class="drawer-close" id="drawerClose">✕</button>
-    </div>
-    <div class="drawer-nav">
-        <a href="#services">Services</a>
-        <a href="#products">Products</a>
-        <a href="#why-choose">Why Choose Us</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-    </div>
-    <div class="drawer-footer">
-        <a href="tel:+919829325775" class="btn btn-primary" style="width: 100%;">📞 Call Now</a>
-        <a href="https://wa.me/919829325775" target="_blank" class="btn btn-success" style="width: 100%;">WhatsApp</a>
-    </div>
+<div class="drawerOverlay" id="drawerOverlay" aria-hidden="true"></div>
+<aside class="drawer" id="drawer" aria-label="Menu" role="dialog" aria-modal="true">
+<div class="drawerTop">
+<div style="display:flex; align-items:center; gap:10px">
+<div class="logo" style="width:40px;height:40px;border-radius:14px;box-shadow:none">SG</div>
+<div>
+<div style="font-weight:1000; line-height:1.1">Suresh Generator</div>
+<div class="muted" style="font-size:12px; font-weight:900">Menu</div>
+</div>
+</div>
+<button class="closeBtn" id="closeMenu" aria-label="Close menu">✕</button>
+</div>
+<div class="drawerNav">
+<a href="#services">Services</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</div>
+<div class="drawerBottom">
+<a class="btn primary" href="tel:+919829325775" style="width: 100%;">Call: Get Quote</a>
+<a class="btn ok" target="_blank" rel="noopener" href="https://wa.me/919829325775" style="width: 100%;">WhatsApp</a>
+</div>
 </aside>
 
-<main>
-<section class="hero-section" id="home">
-    <div class="container">
-        <div class="hero-grid">
-            <div class="hero-left">
-                <div class="hero-badge">
-                    ⚡ Sales • Rental • AMC • 24/7 Service
-                </div>
-                <h1>
-                    Premium <span class="hero-highlight">Generator Solutions</span> Across India
-                </h1>
-                <p>
-                    15+ years of reliable generator sales, rental, installation, AMC and 24/7 emergency support for residential, commercial and industrial clients.
-                </p>
-                <div class="hero-cta">
-                    <a href="tel:+919829325775" class="btn btn-primary">📞 Call Now</a>
-                    <a href="https://wa.me/919829325775" target="_blank" class="btn btn-success">WhatsApp</a>
-                    <a href="#contact" class="btn btn-outline">Visit Location</a>
-                </div>
-                
-                <div class="hero-stats">
-                    <div class="stat-box">
-                        <strong>15+</strong>
-                        <span>Years Experience</span>
-                    </div>
-                    <div class="stat-box">
-                        <strong>500+</strong>
-                        <span>Installations</span>
-                    </div>
-                    <div class="stat-box">
-                        <strong>24/7</strong>
-                        <span>Support</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="hero-right">
-                <div class="info-cards">
-                    <div class="info-card">
-                        <span class="info-card-label">📞 Phone</span>
-                        <div class="info-card-value">
-                            <a href="tel:+919829325775">+91 9829325775</a>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <span class="info-card-label">✉️ Email</span>
-                        <div class="info-card-value">
-                            <a href="mailto:suresh.powerplus@gmail.com">suresh.powerplus@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <span class="info-card-label">📍 Location</span>
-                        <div class="info-card-value">Neemrana, Rajasthan</div>
-                    </div>
-                    <div class="info-card">
-                        <span class="info-card-label">⚡ Power Range</span>
-                        <div class="info-card-value">7.5 – 3750 kVA</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<main id="home" class="hero">
+<div class="container">
+<section class="heroBox" aria-labelledby="main-heading">
+<div class="heroGrid">
+<div class="heroLeft">
+<span class="pill" aria-label="Services offered">Sales • Rental • AMC • Service</span>
+<h1 id="main-heading">Premium generator solutions across India</h1>
+<p>
+Sales, rental, installation, AMC and 24/7 emergency support for residential, commercial and industrial clients.
+</p>
+<div class="heroCtas">
+<a class="btn primary" href="tel:+919829325775" aria-label="Call now for quote">Call Now</a>
+<a class="btn ok" target="_blank" rel="noopener" href="https://wa.me/919829325775" aria-label="Chat on WhatsApp">WhatsApp</a>
+<a class="btn" href="#contact">Visit Location</a>
+</div>
+</div>
+<aside class="heroRight" aria-label="Quick contact information">
+<div class="info">
+<b>Phone</b>
+<a href="tel:+919829325775">+91 982932 5775</a>
+</div>
+<div class="info">
+<b>Email</b>
+<a href="mailto:suresh.powerplus@gmail.com">suresh.powerplus@gmail.com</a>
+</div>
+<div class="info">
+<b>Location</b>
+<span class="muted" style="font-weight:900">Neemrana, Rajasthan</span>
+</div>
+<div class="info">
+<b>Power Range</b>
+<span class="muted" style="font-weight:900">7.5–3750 kVA</span>
+</div>
+</aside>
+</div>
+<div class="kpis" aria-label="Company highlights">
+<div class="kpi" aria-label="15 plus years of experience"><strong>15+</strong><small>Years</small></div>
+<div class="kpi" aria-label="500 plus installations"><strong>500+</strong><small>Installations</small></div>
+<div class="kpi" aria-label="24/7 support available"><strong>24/7</strong><small>Support</small></div>
+<div class="kpi" aria-label="All India coverage"><strong>All India</strong><small>Coverage</small></div>
+</div>
 </section>
-
-<section class="services-section" id="services">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-label">Our Services</span>
-            <h2>Complete Generator Solutions</h2>
-            <p>Fast response, correct sizing, reliable installation and long-term maintenance</p>
-        </div>
-        
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">⚡</div>
-                <h3>Generator Sales</h3>
-                <p>New and refurbished options with guidance for the right kVA selection.</p>
-                <span class="service-tag">Sales</span>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">🚚</div>
-                <h3>Rental Generators</h3>
-                <p>Flexible rental for events, shutdowns, factories and urgent needs.</p>
-                <span class="service-tag">Rental</span>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">🧰</div>
-                <h3>AMC / Maintenance</h3>
-                <p>Preventive maintenance to reduce breakdown risk and downtime.</p>
-                <span class="service-tag">AMC</span>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">🛠️</div>
-                <h3>Installation</h3>
-                <p>Installation and commissioning support with safety-first approach.</p>
-                <span class="service-tag">Install</span>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">🔧</div>
-                <h3>Repair & Service</h3>
-                <p>24/7 diagnostics and repair for most generator brands.</p>
-                <span class="service-tag">Service</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="why-choose-section" id="why-choose">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-label">Why Choose Us</span>
-            <h2>Your Trusted Power Partner</h2>
-            <p>Unmatched expertise, reliability and customer service in generator solutions</p>
-        </div>
-        
-        <div class="features-grid">
-            <div class="feature-box">
-                <span class="feature-icon">⏱️</span>
-                <h3>24/7 Availability</h3>
-                <p>Round-the-clock emergency support and rapid response team ready to serve you anytime.</p>
-            </div>
-            
-            <div class="feature-box">
-                <span class="feature-icon">🎓</span>
-                <h3>15+ Years Experience</h3>
-                <p>Decades of industry expertise in generator installation, maintenance and repair services.</p>
-            </div>
-            
-            <div class="feature-box">
-                <span class="feature-icon">✅</span>
-                <h3>Quality Assurance</h3>
-                <p>Only genuine parts and certified technicians ensure top-quality service every time.</p>
-            </div>
-            
-            <div class="feature-box">
-                <span class="feature-icon">💰</span>
-                <h3>Competitive Pricing</h3>
-                <p>Best market rates with transparent pricing and no hidden charges or fees.</p>
-            </div>
-            
-            <div class="feature-box">
-                <span class="feature-icon">🌍</span>
-                <h3>Pan-India Coverage</h3>
-                <p>Service network across India with local support for all your generator needs.</p>
-            </div>
-            
-            <div class="feature-box">
-                <span class="feature-icon">🏆</span>
-                <h3>Trusted by 500+</h3>
-                <p>Successful installations and satisfied customers across residential, commercial sectors.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="products-section" id="products">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-label">Our Products</span>
-            <h2>Generator Range</h2>
-            <p>From residential backup to industrial power solutions</p>
-        </div>
-        
-        <div class="products-grid">
-            <div class="product-card">
-                <div class="product-header">
-                    <div class="product-icon">🏭</div>
-                    <h3>Industrial Generators</h3>
-                    <p>For heavy loads & continuous uptime</p>
-                </div>
-                <div class="product-body">
-                    <ul class="product-specs">
-                        <li>
-                            <span>Range</span>
-                            <span>82.5 – 3750 kVA</span>
-                        </li>
-                        <li>
-                            <span>Support</span>
-                            <span>AMC + Service</span>
-                        </li>
-                        <li>
-                            <span>Use</span>
-                            <span>Continuous / Standby</span>
-                        </li>
-                    </ul>
-                    <div class="product-actions">
-                        <a href="tel:+919829325775" class="btn btn-primary">Call</a>
-                        <a href="https://wa.me/919829325775" target="_blank" class="btn btn-success">WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-header">
-                    <div class="product-icon">🏢</div>
-                    <h3>Commercial Backup</h3>
-                    <p>Offices, warehouses, business parks</p>
-                </div>
-                <div class="product-body">
-                    <ul class="product-specs">
-                        <li>
-                            <span>Range</span>
-                            <span>10 – 2500 kVA</span>
-                        </li>
-                        <li>
-                            <span>Options</span>
-                            <span>Rental / Sale</span>
-                        </li>
-                        <li>
-                            <span>Support</span>
-                            <span>Fast response</span>
-                        </li>
-                    </ul>
-                    <div class="product-actions">
-                        <a href="tel:+919829325775" class="btn btn-primary">Call</a>
-                        <a href="https://wa.me/919829325775" target="_blank" class="btn btn-success">WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-header">
-                    <div class="product-icon">🏠</div>
-                    <h3>Residential Generators</h3>
-                    <p>Homes & societies with silent canopy</p>
-                </div>
-                <div class="product-body">
-                    <ul class="product-specs">
-                        <li>
-                            <span>Range</span>
-                            <span>7.5 – 62.5 kVA</span>
-                        </li>
-                        <li>
-                            <span>Noise</span>
-                            <span>Silent canopy</span>
-                        </li>
-                        <li>
-                            <span>Use</span>
-                            <span>Home / Society</span>
-                        </li>
-                    </ul>
-                    <div class="product-actions">
-                        <a href="tel:+919829325775" class="btn btn-primary">Call</a>
-                        <a href="https://wa.me/919829325775" target="_blank" class="btn btn-success">WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="brands-section">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-label">Brands We Service</span>
-            <h2>Multi-Brand Support</h2>
-            <p>Expert service for all major generator brands</p>
-        </div>
-        
-        <div class="brands-grid">
-            <div class="brand-box">Cummins</div>
-            <div class="brand-box">Kirloskar</div>
-            <div class="brand-box">Mahindra</div>
-            <div class="brand-box">Ashok Leyland</div>
-            <div class="brand-box">Caterpillar</div>
-            <div class="brand-box">Perkins</div>
-            <div class="brand-box">Volvo Penta</div>
-            <div class="brand-box">KOEL</div>
-        </div>
-    </div>
-</section>
-
-<section class="testimonials-section" id="testimonials">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-label">Testimonials</span>
-            <h2>What Our Clients Say</h2>
-            <p>Real experiences from satisfied customers across India</p>
-        </div>
-        
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <p class="testimonial-text">
-                    Excellent service! They installed a 125kVA generator at our factory. Very professional team and timely completion. Highly recommended for industrial setups.
-                </p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">RK</div>
-                    <div class="author-info">
-                        <h4>Rajesh Kumar</h4>
-                        <p>Factory Owner, Neemrana</p>
-                        <div class="rating">★★★★★</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="testimonial-card">
-                <p class="testimonial-text">
-                    Best AMC service provider in the region! Their maintenance team is punctual and thorough. Our generator runs smoothly thanks to their regular checks.
-                </p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">PS</div>
-                    <div class="author-info">
-                        <h4>Priya Sharma</h4>
-                        <p>IT Company, Gurgaon</p>
-                        <div class="rating">★★★★★</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="testimonial-card">
-                <p class="testimonial-text">
-                    Quick response for emergency repair at 2 AM! They fixed our generator breakdown within hours. Truly 24/7 service. Very satisfied with their support.
-                </p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">AV</div>
-                    <div class="author-info">
-                        <h4>Amit Verma</h4>
-                        <p>Hospital Administrator, Alwar</p>
-                        <div class="rating">★★★★★</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="faq-section" id="faq">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-label">FAQ</span>
-            <h2>Frequently Asked Questions</h2>
-            <p>Everything you need to know about our generator services</p>
-        </div>
-        
-        <div class="faq-container">
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>What generator capacity do I need for my home?</span>
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>For residential use, calculate your total load: 1-2 BHK needs 5-10 kVA, 3 BHK needs 10-15 kVA, and larger homes or societies need 15-25 kVA. We provide free load assessment to determine the exact capacity required for your specific needs.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Do you provide installation services?</span>
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Yes! We provide complete turnkey installation including site preparation, electrical connections, ATS panel setup, fuel line installation, and commissioning. Our certified technicians ensure safe and compliant installation as per industry standards.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>What is included in your AMC service?</span>
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Our AMC includes periodic inspections, oil & filter changes, battery maintenance, cooling system check, fuel system cleaning, load testing, and priority breakdown support. We offer quarterly, half-yearly, and annual AMC plans tailored to your usage.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Is 24/7 emergency service really available?</span>
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Absolutely! We maintain a dedicated emergency response team available round-the-clock. Call +91 9829325775 anytime for breakdown support. Our technicians typically reach within 2-4 hours depending on your location.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Do you offer generator rental services?</span>
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Yes, we offer flexible rental options for events, construction sites, emergency backup, and temporary power needs. Rental includes delivery, installation, operator (if needed), fuel management, and maintenance during the rental period.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Which generator brands do you service?</span>
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>We service all major brands including Cummins, Kirloskar, Mahindra, Ashok Leyland, Caterpillar, Perkins, Volvo Penta, and KOEL. Our technicians are trained and experienced with both Indian and international generator makes.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="contact-section" id="contact">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-label">Get In Touch</span>
-            <h2>Contact Us</h2>
-            <p>Phone: +91 9829325775 • Email: suresh.powerplus@gmail.com</p>
-        </div>
-        
-        <div class="contact-grid">
-            <div class="contact-info">
-                <div class="contact-card">
-                    <h3>Send Requirement</h3>
-                    <p>Contact us directly via Call or WhatsApp for quick response and expert guidance.</p>
-                    <div class="contact-buttons">
-                        <a href="tel:+919829325775" class="btn btn-primary" style="width: 100%;">📞 Call Now</a>
-                        <a href="https://wa.me/919829325775" target="_blank" class="btn btn-success" style="width: 100%;">WhatsApp</a>
-                        <a href="mailto:suresh.powerplus@gmail.com" class="btn btn-outline" style="width: 100%;">✉️ Email</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.1605728807326!2d76.4125944749332!3d27.988983313014533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396d551239bc0efd%3A0x6e4176e43739288b!2sSuresh%20generator%20neemrana!5e0!3m2!1sen!2sin!4v1762792308766!5m2!1sen!2sin"
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    title="Suresh Generator Neemrana location"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-    </div>
-</section>
+</div>
 </main>
 
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-left">
-                <p>© 2025 Suresh Generator • Neemrana, Rajasthan • All Rights Reserved</p>
-            </div>
-            <div class="footer-right">
-                <a href="mailto:suresh.powerplus@gmail.com" class="btn btn-outline">Email</a>
-                <a href="tel:+919829325775" class="btn btn-primary">Call Now</a>
-            </div>
-        </div>
-    </div>
+<section class="section" id="services" aria-labelledby="services-heading">
+<div class="container">
+<div class="sectionHead">
+<div>
+<h2 id="services-heading">Services</h2>
+<p class="muted">Fast response, correct sizing, reliable installation and long-term maintenance.</p>
+</div>
+<a class="btn primary" href="tel:+919829325775">Call for Quote</a>
+</div>
+<div class="grid-3">
+<article class="card feat fade-in-wait">
+<div class="featTop"><div class="icon" aria-hidden="true">⚡</div><span class="pill">Sales</span></div>
+<h3>Generator sales</h3>
+<p>New/refurb options with guidance for the right kVA selection.</p>
+</article>
+<article class="card feat fade-in-wait">
+<div class="featTop"><div class="icon" aria-hidden="true">🚚</div><span class="pill">Rental</span></div>
+<h3>Rental generators</h3>
+<p>Flexible rental for events, shutdowns, factories and urgent needs.</p>
+</article>
+<article class="card feat fade-in-wait">
+<div class="featTop"><div class="icon" aria-hidden="true">🧰</div><span class="pill">AMC</span></div>
+<h3>AMC / Maintenance</h3>
+<p>Preventive maintenance to reduce breakdown risk and downtime.</p>
+</article>
+<article class="card feat fade-in-wait">
+<div class="featTop"><div class="icon" aria-hidden="true">🛠️</div><span class="pill">Install</span></div>
+<h3>Installation</h3>
+<p>Installation and commissioning support with safety-first approach.</p>
+</article>
+<article class="card feat fade-in-wait">
+<div class="featTop"><div class="icon" aria-hidden="true">🔧</div><span class="pill">Service</span></div>
+<h3>Repair & service</h3>
+<p>Diagnostics and repair for most generator brands.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="section" id="products" aria-labelledby="products-heading">
+<div class="container">
+<div class="sectionHead">
+<div>
+<h2 id="products-heading">Products</h2>
+<p class="muted">Sample categories (change text as per your real models).</p>
+</div>
+<a class="btn ok" target="_blank" rel="noopener" href="https://wa.me/919829325775">WhatsApp Requirement</a>
+</div>
+<div class="grid-3">
+<article class="card product fade-in-wait">
+<div class="img" aria-label="Industrial generator category">Industrial</div>
+<div class="pad">
+<h3>Industrial generators</h3>
+<p class="muted">For heavy loads & continuous uptime.</p>
+<ul class="specs">
+<li><span>Range</span> <b>82.5–3750 kVA</b></li>
+<li><span>Support</span> <b>AMC + Service</b></li>
+<li><span>Use</span> <b>Continuous / Standby</b></li>
+</ul>
+<div class="actions">
+<a class="btn primary" href="tel:+919829325775">Call</a>
+<a class="btn ok" target="_blank" rel="noopener" href="https://wa.me/919829325775">WhatsApp</a>
+</div>
+</div>
+</article>
+<article class="card product fade-in-wait">
+<div class="img" aria-label="Commercial generator category">Commercial</div>
+<div class="pad">
+<h3>Commercial backup</h3>
+<p class="muted">Offices, warehouses, business parks.</p>
+<ul class="specs">
+<li><span>Range</span> <b>10–2500 kVA</b></li>
+<li><span>Options</span> <b>Rental / Sale</b></li>
+<li><span>Support</span> <b>Fast response</b></li>
+</ul>
+<div class="actions">
+<a class="btn primary" href="tel:+919829325775">Call</a>
+<a class="btn ok" target="_blank" rel="noopener" href="https://wa.me/919829325775">WhatsApp</a>
+</div>
+</div>
+</article>
+<article class="card product fade-in-wait">
+<div class="img" aria-label="Residential generator category">Residential</div>
+<div class="pad">
+<h3>Residential generators</h3>
+<p class="muted">Homes & societies with silent canopy options.</p>
+<ul class="specs">
+<li><span>Range</span> <b>7.5–62.5 kVA</b></li>
+<li><span>Noise</span> <b>Silent canopy</b></li>
+<li><span>Use</span> <b>Home / Society</b></li>
+</ul>
+<div class="actions">
+<a class="btn primary" href="tel:+919829325775">Call</a>
+<a class="btn ok" target="_blank" rel="noopener" href="https://wa.me/919829325775">WhatsApp</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<section class="section" id="contact" aria-labelledby="contact-heading">
+<div class="container">
+<div class="sectionHead">
+<div>
+<h2 id="contact-heading">Contact</h2>
+<p class="muted">Phone: +91 9829325775 • Email: suresh.powerplus@gmail.com</p>
+</div>
+</div>
+<div class="contactGrid">
+<div class="card pad">
+<h3>Send requirement</h3>
+<p class="muted" style="margin-top:8px">
+Please contact us directly via Call or WhatsApp for quick response.
+</p>
+<div class="actions" style="margin-top:14px">
+<a class="btn primary" href="tel:+919829325775">Call</a>
+<a class="btn ok" target="_blank" rel="noopener" href="https://wa.me/919829325775">WhatsApp</a>
+<a class="btn" href="mailto:suresh.powerplus@gmail.com">Email</a>
+</div>
+</div>
+<div class="map" aria-label="Google Map showing Suresh Generator location">
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.1605728807326!2d76.4125944749332!3d27.988983313014533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396d551239bc0efd%3A0x6e4176e43739288b!2sSuresh%20generator%20neemrana!5e0!3m2!1sen!2sin!4v1762792308766!5m2!1sen!2sin"
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade"
+title="Suresh Generator Neemrana location map"
+allowfullscreen>
+</iframe>
+</div>
+</div>
+</div>
+</section>
+
+<footer role="contentinfo">
+<div class="container">
+<div class="foot">
+<div>© 2025 Suresh Generator • Neemrana, Rajasthan</div>
+<div style="display:flex; gap:10px; flex-wrap:wrap">
+<a class="btn" href="mailto:suresh.powerplus@gmail.com">Email</a>
+<a class="btn primary" href="tel:+919829325775">Call</a>
+</div>
+</div>
+</div>
 </footer>
 
-<div class="floating-buttons">
-    <a href="https://wa.me/919829325775" target="_blank" class="fab-btn fab-whatsapp" aria-label="WhatsApp">WA</a>
-    <a href="tel:+919829325775" class="fab-btn fab-call" aria-label="Call">📞</a>
-    <a href="#home" class="fab-btn fab-top" id="scrollTop" aria-label="Back to top">↑</a>
+<div class="float" aria-label="Quick contact buttons">
+<a class="fab wa" target="_blank" rel="noopener" href="https://wa.me/919829325775" aria-label="Message on WhatsApp">WA</a>
+<a class="fab call" href="tel:+919829325775" aria-label="Call us now">CALL</a>
+<a class="fab top" id="toTop" href="#home" aria-label="Scroll back to top">↑</a>
 </div>
 
 <script>
 'use strict';
 
-const menuToggle = document.getElementById('menuToggle');
-const mobileDrawer = document.getElementById('mobileDrawer');
-const drawerOverlay = document.getElementById('drawerOverlay');
-const drawerClose = document.getElementById('drawerClose');
+const openMenu = document.getElementById('openMenu');
+const closeMenu = document.getElementById('closeMenu');
+const drawer = document.getElementById('drawer');
+const overlay = document.getElementById('drawerOverlay');
+const mainHeader = document.getElementById('mainHeader');
+const toTop = document.getElementById('toTop');
 
-function toggleDrawer(open) {
-    if (open) {
-        mobileDrawer.classList.add('active');
-        drawerOverlay.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    } else {
-        mobileDrawer.classList.remove('active');
-        drawerOverlay.classList.remove('active');
-        document.body.style.overflow = '';
-    }
+function setDrawer(open){
+drawer.classList.toggle('open', open);
+overlay.classList.toggle('open', open);
+document.body.style.overflow = open ? 'hidden' : '';
+openMenu?.setAttribute('aria-expanded', String(open));
+drawer?.setAttribute('aria-hidden', String(!open));
+overlay?.setAttribute('aria-hidden', String(!open));
+if(open && closeMenu){
+closeMenu.focus();
+} else if(!open && openMenu){
+openMenu.focus();
+}
 }
 
-menuToggle?.addEventListener('click', () => toggleDrawer(true));
-drawerClose?.addEventListener('click', () => toggleDrawer(false));
-drawerOverlay?.addEventListener('click', () => toggleDrawer(false));
+openMenu?.addEventListener('click', () => setDrawer(true));
+closeMenu?.addEventListener('click', () => setDrawer(false));
+overlay?.addEventListener('click', () => setDrawer(false));
 
-document.querySelectorAll('.drawer-nav a').forEach(link => {
-    link.addEventListener('click', () => toggleDrawer(false));
+drawer?.addEventListener('click', (e) => {
+const a = e.target.closest('a');
+if(a && a.getAttribute('href')?.startsWith('#')) setDrawer(false);
 });
 
 window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && mobileDrawer.classList.contains('active')) {
-        toggleDrawer(false);
-    }
+if(e.key === 'Escape' && drawer?.classList.contains('open')) {
+setDrawer(false);
+}
 });
 
-const scrollTop = document.getElementById('scrollTop');
 let ticking = false;
+let lastScrollY = 0;
 
-function checkScroll() {
-    if (window.scrollY > 500) {
-        scrollTop?.classList.add('show');
-    } else {
-        scrollTop?.classList.remove('show');
-    }
-    ticking = false;
+function handleScroll() {
+const scrollY = window.scrollY;
+if (scrollY > 100) {
+mainHeader?.classList.add('scrolled');
+} else {
+mainHeader?.classList.remove('scrolled');
+}
+if (scrollY > 600) {
+toTop?.classList.add('show');
+} else {
+toTop?.classList.remove('show');
+}
+lastScrollY = scrollY;
+ticking = false;
 }
 
 window.addEventListener('scroll', () => {
-    if (!ticking) {
-        window.requestAnimationFrame(checkScroll);
-        ticking = true;
-    }
+if (!ticking) {
+window.requestAnimationFrame(handleScroll);
+ticking = true;
+}
 }, { passive: true });
 
+if('IntersectionObserver' in window) {
+const observerOptions = {
+root: null,
+rootMargin: '0px 0px -100px 0px',
+threshold: 0.15
+};
+const observer = new IntersectionObserver((entries) => {
+entries.forEach((entry) => {
+if(entry.isIntersecting) {
+entry.target.classList.add('visible');
+observer.unobserve(entry.target);
+}
+});
+}, observerOptions);
+document.addEventListener('DOMContentLoaded', () => {
+const fadeElements = document.querySelectorAll('.fade-in-wait');
+fadeElements.forEach((el) => observer.observe(el));
+});
+} else {
+document.addEventListener('DOMContentLoaded', () => {
+const fadeElements = document.querySelectorAll('.fade-in-wait');
+fadeElements.forEach((el) => el.classList.add('visible'));
+});
+}
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (href === '#' || href === '#home') {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            return;
-        }
-        
-        const target = document.querySelector(href);
-        if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            
-            if (history.pushState) {
-                history.pushState(null, null, href);
-            }
-        }
-    });
+anchor.addEventListener('click', function (e) {
+const href = this.getAttribute('href');
+if(href === '#' || href === '#home') {
+e.preventDefault();
+window.scrollTo({ top: 0, behavior: 'smooth' });
+return;
+}
+const target = document.querySelector(href);
+if(target) {
+e.preventDefault();
+const headerOffset = 80;
+const elementPosition = target.getBoundingClientRect().top;
+const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+window.scrollTo({
+top: offsetPosition,
+behavior: 'smooth'
+});
+if(history.pushState) {
+history.pushState(null, null, href);
+}
+}
+});
 });
 
-document.querySelectorAll('.faq-item').forEach(item => {
-    const question = item.querySelector('.faq-question');
-    question.addEventListener('click', () => {
-        const isActive = item.classList.contains('active');
-        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
-        if (!isActive) {
-            item.classList.add('active');
-        }
-    });
-});
-
-console.log(
-    '%c⚡ Suresh Generator Neemrana',
-    'color: #0B2A6F; font-size: 24px; font-weight: bold;'
-);
-console.log(
-    '%c15+ Years | 500+ Installations | All India Coverage',
-    'color: #C8A24A; font-size: 14px; font-weight: bold;'
-);
+console.log('%c⚡ Suresh Generator Neemrana', 'color: #0B2A6F; font-size: 20px; font-weight: bold;');
+console.log('%c15+ Years | 500+ Installations | All India Coverage', 'color: #C8A24A; font-size: 12px;');
 console.log('%c📞 Call: +91 9829325775', 'color: #16A34A; font-weight: bold;');
 </script>
 
